@@ -6,8 +6,7 @@ import pyfiglet as fb
 # initializing string 
 
 list_hash = ['md5','sha1', 'sha224', 'sha256', 'sha384', 'sha512',
- 'blake2b', 'blake2s','sha3_224', 'sha3_256', 'sha3_384','sha3_512',
-  'shake_128', 'shake_256'
+ 'blake2b', 'blake2s','sha3_224', 'sha3_256', 'sha3_384','sha3_512'
 ]
 
 b = fb.figlet_format("Hash Generator",font='graffiti')
@@ -74,14 +73,7 @@ elif n==11:
     result = h.sha3_512(str2hash.encode()) 
     print("The hexadecimal equivalent of hash is : ", end ="") 
     print(result.hexdigest()) 
-elif n==12:
-    result = h.shake_128(str2hash.encode())
-    print("The hexadecimal equivalent of hash is : ", end ="") 
-    print(result.hexdigest())  
-elif n==13:
-    result = h.shake_256(str2hash.encode())
-    print("The hexadecimal equivalent of hash is : ", end ="") 
-    print(result.hexdigest())  
+
 else :
     print('enter a valid option')
 print('-'*19,'+','<--end-->','+','-'*19)
